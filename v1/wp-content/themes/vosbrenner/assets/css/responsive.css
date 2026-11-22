@@ -1,0 +1,121 @@
+@media (max-width: 545px) {
+	body {
+		/*width: 520px;*/
+	}
+	#root {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#root .page {
+		padding: 0;
+		width: auto;
+	}
+	#root .wrapper.header {
+		position: relative;
+		left: 0;
+		top: 16px;
+		width: auto;
+		height: 150px;
+	}
+	#root .wrapper.header .title {
+		width: auto;
+	}
+	#root .wrapper.header .nav.padded {
+		padding: 0;
+		margin: 12px 0 0;
+		width: auto;
+		position: static;
+	}
+	#root .wrapper.header .nav.padded.tag-nav {
+		left: 126px;
+		top: 60px;
+		position: absolute;
+	}
+	#root .wrapper.header .nav.main-links {
+		left: 0 !important;
+		top: 60px !important;
+		position: absolute;
+		padding: 0;
+		margin: 12px 0 0;
+	}
+	#root .nav .arrange-by {
+		position: static;
+		left: 0;
+	}
+	#root .wrapper.header .nav.main.socmed {
+		left: 350px;
+		position: absolute;
+		top: 60px;
+	}
+	#admin_tools {
+		display: none;
+		visibility: hidden;
+	}
+	
+	#root .wrapper.content .post-wrapper.overview {
+		top: 0;
+		padding-top: 15px !important;
+		width: auto !important;
+	}
+	#root .wrapper.content .post-wrapper.overview .post.portfolio {
+		width: auto !important;
+	}
+	#root .wrapper.content .post .data-items {
+		height: auto !important;
+	}
+	#root .wrapper.content .post .data-items .data-item {
+		margin: 0 0 24px;
+	}
+	#root .wrapper.content .post .data-items .data-item,
+	#root .wrapper.content .post .data-items .data-item img,
+	#root .wrapper.content .post .data-items .data-item iframe,
+	#root .wrapper.content .post .data-items .data-item embed {
+		position: static !important;
+		width: 100% !important;
+		height: auto !important;
+	}
+	#root .wrapper.content .post .data-items .data-item iframe {
+		min-height: 250px;
+	}
+	#root .wrapper.content .post .prev-next {
+		display: none;
+	}
+	#root .wrapper.content .post .content {
+		
+	}
+	
+	
+	#root .wrapper.content .post {
+		width: auto !important;
+	}
+	#root .wrapper.content .post-wrapper .post.home .quote {
+		font-size: 55px;
+		line-height: 65px;
+	}
+	#root .wrapper.content .post-meta .meta-item {
+		width: auto !important;
+		/*max-width: 500px;*/
+		font-size: 55px;
+		line-height: 55px;
+	}
+	#root .wrapper.content .post-thumb {
+		margin-right: 40px;
+	}
+	
+	#root .wrapper.content .sidebar {
+		position: relative !important;
+		top: 0 !important;
+		left: 0 !important;
+		overflow: hidden;
+		width: auto !important;
+		height: auto !important;
+		padding-top: 11px;
+	}
+	#root .wrapper.content .sidebar li {
+		float: left;
+		width: 135px;
+	}
+	#root .wrapper.content .sidebar a {
+		white-space: nowrap;
+	}
+}
