@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Content Context</title>
+<meta content="" name="keywords"/>
+<meta content="A Design Group" name="description"/>
+<meta content="width=450, initial-scale=0.7" name="viewport"/>
+
+
+
+<meta content="WordPress 3.8.5" name="generator"/>
+<link href="../wp-content/themes/vosbrenner/assets/css/reset.css" media="screen" rel="stylesheet"/>
+<link href="../wp-content/themes/vosbrenner/modules/jquery.colorpick/css/colorpicker.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../wp-content/themes/vosbrenner/modules/jquery.ui/css/ui-lightness/jquery-ui-1.10.2.custom.css" media="screen" rel="stylesheet" type="text/css"/>
+<link href="../wp-content/themes/vosbrenner/assets/css/screen.css" media="screen" rel="stylesheet"/>
+<link href="../wp-content/themes/vosbrenner/assets/css/responsive.css" media="screen" rel="stylesheet"/>
+<link href="../wp-content/themes/vosbrenner/assets/css/debug.css" media="screen" rel="stylesheet"/>
+<link href="../wp-content/themes/vosbrenner/assets/css/jqtouch.css" media="screen" rel="stylesheet"/>
+<link href="../wp-content/themes/vosbrenner/assets/css/format-overrides.css" media="screen" rel="stylesheet"/>
+<link href="../wp-content/themes/vosbrenner/assets/css/daneden-animations.css" media="screen" rel="stylesheet"/>
+<style type="text/css">
+	.accent-color {
+		color: #ad2ac7;
+		color: rgba(173, 42, 199, 0.75);
+	}
+	.accent-color-opaque {
+		color: #ad2ac7;
+	}
+	.accent-bg {
+		background-color: #ad2ac7;
+		background-color: rgba(173, 42, 199, 0.75);
+	}
+	.accent-bg-opaque {
+		background-color: #ad2ac7;
+	}
+	.accent-border {
+		border-color: #ad2ac7;
+		border-color: rgba(173, 42, 199, 0.75);
+	}
+	#root.colorpick .post.home {
+		opacity: 0.75;
+	}
+	#root .wrapper.content .post .content a {
+		color: #ad2ac7;
+	}
+	</style>
+<link href="../wp-content/themes/vosbrenner/assets/img/favicon.png" rel="icon" type="image/png"/>
+
+
+
+<script type="text/javascript">
+	window.config = {"home":"http:\/\/contentcontext.org","name":"Content Context","desc":"A Design Group","site_url":"http:\/\/contentcontext.org","grid":{"w":76,"h":23,"m":24,"img_w":176,"img_h":176},"ms_accent_color":"ad2ac7","ms_accent_rgb":[173,42,199],"ms_accent_opacity":0.75};
+	</script>
+<script src="../wp-content/themes/vosbrenner/modules/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="../wp-content/themes/vosbrenner/modules/jquery.ui/jquery-ui-1.10.2.custom.min.js" type="text/javascript"></script>
+<script src="../wp-content/themes/vosbrenner/modules/jquery.isotope/jquery.isotope-1.5.25.min.js" type="text/javascript"></script>
+<script src="../wp-content/themes/vosbrenner/modules/jquery.easing/jquery.easing-1.3.js" type="text/javascript"></script>
+<script src="../wp-content/themes/vosbrenner/modules/jquery.timers/jquery.timers-1.2.js" type="text/javascript"></script>
+<script src="../wp-content/themes/vosbrenner/modules/jquery.cookie/jquery.cookie.js" type="text/javascript"></script>
+<script src="../wp-content/themes/vosbrenner/modules/js.context-blender/context-blender.js" type="text/javascript"></script>
+<script src="../wp-content/themes/vosbrenner/modules/js.html2canvas/html2canvas.js" type="text/javascript"></script>
+<script src="../wp-content/themes/vosbrenner/modules/jquery.colorpick/js/colorpicker.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.js"></script>
+	<![endif]-->
+<script src="../wp-content/themes/vosbrenner/frontend/vbadmintools.js" type="text/javascript"></script>
+<script src="../wp-content/themes/vosbrenner/frontend/main.js" type="text/javascript"></script>
+<!--<script type="text/javascript" src="http://contentcontext.org/wp-content/themes/vosbrenner/frontend/blend.js"></script>-->
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-12020332-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	</script>
+</head>
+<body>
+<div class="index page-index" id="root">
+<div class="page">
+<script type="text/javascript">
+			window.vb_year_meta_info = [{"title":"2015","selector":".year-2015","slug":"2015"},{"title":"2014","selector":".year-2014","slug":"2014"},{"title":"2013","selector":".year-2013","slug":"2013"},{"title":"2012","selector":".year-2012","slug":"2012"},{"title":"2011","selector":".year-2011","slug":"2011"},{"title":"2010","selector":".year-2010","slug":"2010"},{"title":"2009","selector":".year-2009","slug":"2009"},{"title":"2008","selector":".year-2008","slug":"2008"},{"title":"2007","selector":".year-2007","slug":"2007"},{"title":"2006","selector":".year-2006","slug":"2006"},{"title":"2005","selector":".year-2005","slug":"2005"}];
+			window.vb_cat_meta_info = [{"title":"Books and Publications","selector":".cat-books","slug":"books"},{"title":"Environmental","selector":".cat-environmental","slug":"environmental"},{"title":"Identity","selector":".cat-identity","slug":"identity"},{"title":"Information Graphics","selector":".cat-information-design","slug":"information-design"},{"title":"Interactive","selector":".cat-interaction","slug":"interaction"},{"title":"Printed Matter","selector":".cat-printed-matter","slug":"printed-matter"}];
+			</script>
+<div class="wrapper header">
+<div class="title canvas-blend-top has-canvas" data-blend-mode="multiply" id="title_container"><div class="blend-container"><h1><a class="accent-color-opaque" href="../index.html">Content Context</a></h1><h2><a class="accent-color-opaque" href="../index.html">A Design Group</a></h2></div></div>
+<ul class="nav main type-nav padded tag-nav">
+<li>
+<div class="arrange-by">
+<form action="/" id="arrange_by" method="post">
+<select class="pftag">
+<option selected="selected" value="_default_">Arrange by</option>
+<option data-meta-info="Milky Way" data-meta-slug="milky-way" data-meta-type="this-tag" data-sort-type=".tag-milky-way" value=".tag-milky-way">Milky Way</option>
+<option data-meta-info="Space" data-meta-slug="space" data-meta-type="this-tag" data-sort-type=".tag-space" value=".tag-space">Space</option>
+<option data-meta-info="Rotterdam" data-meta-slug="rotterdam" data-meta-type="this-tag" data-sort-type=".tag-rotterdam" value=".tag-rotterdam">Rotterdam</option>
+<option data-meta-info="The Netherlands" data-meta-slug="the_netherlands" data-meta-type="this-tag" data-sort-type=".tag-the_netherlands" value=".tag-the_netherlands">The Netherlands</option>
+<option data-meta-info="Magazine" data-meta-slug="magazine" data-meta-type="this-tag" data-sort-type=".tag-magazine" value=".tag-magazine">Magazine</option>
+<option data-meta-info="New York City" data-meta-slug="new_york_city" data-meta-type="this-tag" data-sort-type=".tag-new_york_city" value=".tag-new_york_city">New York City</option>
+<option data-meta-info="Architecture" data-meta-slug="architecture" data-meta-type="this-tag" data-sort-type=".tag-architecture" value=".tag-architecture">Architecture</option>
+<option data-meta-info="Matter Practice" data-meta-slug="matter-practice-architecture" data-meta-type="this-tag" data-sort-type=".tag-matter-practice-architecture" value=".tag-matter-practice-architecture">Matter Practice</option>
+<option data-meta-info="Catalogue" data-meta-slug="catalogue" data-meta-type="this-tag" data-sort-type=".tag-catalogue" value=".tag-catalogue">Catalogue</option>
+<option data-meta-info="Loyal Kasper" data-meta-slug="loyal-kasper" data-meta-type="this-tag" data-sort-type=".tag-loyal-kasper" value=".tag-loyal-kasper">Loyal Kasper</option>
+<option data-meta-info="motion graphics" data-meta-slug="motion-graphics" data-meta-type="this-tag" data-sort-type=".tag-motion-graphics" value=".tag-motion-graphics">motion graphics</option>
+<option data-meta-info="Monachelli Press" data-meta-slug="monachelli-press" data-meta-type="this-tag" data-sort-type=".tag-monachelli-press" value=".tag-monachelli-press">Monachelli Press</option>
+<option data-meta-info="Goethe Institut" data-meta-slug="goethe-institut" data-meta-type="this-tag" data-sort-type=".tag-goethe-institut" value=".tag-goethe-institut">Goethe Institut</option>
+<option data-meta-info="Bangkok" data-meta-slug="bangkok" data-meta-type="this-tag" data-sort-type=".tag-bangkok" value=".tag-bangkok">Bangkok</option>
+<option data-meta-info="Thailand" data-meta-slug="thailand" data-meta-type="this-tag" data-sort-type=".tag-thailand" value=".tag-thailand">Thailand</option>
+<option data-meta-info="Monacelli Press" data-meta-slug="monacelli-press" data-meta-type="this-tag" data-sort-type=".tag-monacelli-press" value=".tag-monacelli-press">Monacelli Press</option>
+<option data-meta-info="Denmark" data-meta-slug="denmark" data-meta-type="this-tag" data-sort-type=".tag-denmark" value=".tag-denmark">Denmark</option>
+<option data-meta-info="Austria" data-meta-slug="austria" data-meta-type="this-tag" data-sort-type=".tag-austria" value=".tag-austria">Austria</option>
+<option data-meta-info="Vienna" data-meta-slug="vienna" data-meta-type="this-tag" data-sort-type=".tag-vienna" value=".tag-vienna">Vienna</option>
+<option data-meta-info="Die Zeit" data-meta-slug="die-zeit" data-meta-type="this-tag" data-sort-type=".tag-die-zeit" value=".tag-die-zeit">Die Zeit</option>
+<option data-meta-info="Hamburg" data-meta-slug="hamburg" data-meta-type="this-tag" data-sort-type=".tag-hamburg" value=".tag-hamburg">Hamburg</option>
+</select>
+</form>
+</div>
+</li>
+<li><a class="dynlink-sort back-to-index type-nav" data-meta-type="chrono" data-sort-type="*" href="index.html">Back to index</a></li>
+</ul>
+<ul class="nav main socmed type-nav padded">
+<li class="socmeds">
+<ul class="nav">
+<li><a class="socmed fb accent-bg-opaque" href="https://www.facebook.com/pages/Content-Context/1396686617251353?id=1396686617251353" target="_blank">Facebook</a></li>
+<li><a class="socmed tw accent-bg-opaque" href="https://twitter.com/contentcontext1" target="_blank">Twitter</a></li>
+<li><a class="socmed li accent-bg-opaque" href="https://www.linkedin.com/profile/view?id=4871374" target="_blank">LinkedIn</a></li>
+</ul>
+</li>
+<li class="lang"><a href="">English</a> / <a href="">Dutch</a></li>
+</ul>
+<ul class="nav main right type-nav main-links">
+<li><a href="../index.html">Work With Us</a></li>
+<li><a href="../contact/index.html">Contact us</a></li>
+<li><a href="../index.html">CC &amp; Co.</a></li>
+</ul>
+</div>
+<div class="wrapper content" data-sort-mode="year" id="data_container">
+<div class="sidebar">
+<ul class="nav sort-links type-nav" id="sort_pfcat">
+<!--						<li><a href="http://contentcontext.org/portfolio/#sort-chrono" class="dynlink-sort" data-meta-type="chrono" data-sort-type="*">Everything</a></li>-->
+<li><a class="dynlink-sort" data-meta-type="all-cats" data-sort-type="*" href="index.html">Categories</a></li>
+<li><a class="dynlink-sort" data-meta-type="year" data-sort-type=".cat-year" href="index.html">Year</a></li>
+<li><a class="dynlink-sort" data-meta-info="Environmental" data-meta-slug="environmental" data-meta-type="this-cat" data-sort-type=".cat-environmental" href="index.html">Environmental</a></li>
+<li><a class="dynlink-sort" data-meta-info="Interactive" data-meta-slug="interaction" data-meta-type="this-cat" data-sort-type=".cat-interaction" href="index.html">Interactive</a></li>
+<li><a class="dynlink-sort" data-meta-info="Books and Publications" data-meta-slug="books" data-meta-type="this-cat" data-sort-type=".cat-books" href="index.html">Books and Publications</a></li>
+<li><a class="dynlink-sort" data-meta-info="Identity" data-meta-slug="identity" data-meta-type="this-cat" data-sort-type=".cat-identity" href="index.html">Identity</a></li>
+<li><a class="dynlink-sort" data-meta-info="Information Graphics" data-meta-slug="information-design" data-meta-type="this-cat" data-sort-type=".cat-information-design" href="index.html">Information Graphics</a></li>
+<li><a class="dynlink-sort" data-meta-info="Printed Matter" data-meta-slug="printed-matter" data-meta-type="this-cat" data-sort-type=".cat-printed-matter" href="index.html">Printed Matter</a></li>
+</ul>
+</div>
+<div class="post-meta">
+<div class="example meta-item accent-color has-canvas canvas-blend-top" data-blend-mode="multiply"><p class="blend-container label">Index</p></div>
+</div>
+<div class="post-wrapper overview">
+<div class="post-thumb sortable year-2015 has-year cat-interaction has-cat post-id-1597">
+<a class="top-link" href="amateur-cities/index.html"></a>
+<a class="real-link" href="amateur-cities/index.html">
+<span class="thumb"><img alt="Amateur Cities" src="../wp-content/themes/vosbrenner/cache/img/8d784aa86c7a82a8df22ea76dbf386c2.png"/></span>
+<span class="title">Amateur Cities</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2014 has-year cat-identity has-cat cat-interaction post-id-1695">
+<a class="top-link" href="make-your-choice-2014-eu-election-guide/index.html"></a>
+<a class="real-link" href="make-your-choice-2014-eu-election-guide/index.html">
+<span class="thumb"><img alt="Make Your Choice: 2014 EU Election Guide" src="../wp-content/themes/vosbrenner/cache/img/8e5b35d98aa65bb5ab597de0bc18804d.png"/></span>
+<span class="title">Make Your Choice: 2014 EU Election Guide</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2014 has-year cat-identity has-cat post-id-1732">
+<a class="top-link" href="moneylab-coining-alternatives/index.html"></a>
+<a class="real-link" href="moneylab-coining-alternatives/index.html">
+<span class="thumb"><img alt="MoneyLab: Coining Alternatives" src="../wp-content/themes/vosbrenner/cache/img/a2e6c4b317d6150a177c150aef41be01.png"/></span>
+<span class="title">MoneyLab: Coining Alternatives</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2014 has-year cat-identity has-cat cat-interaction post-id-1469">
+<a class="top-link" href="good-friends/index.html"></a>
+<a class="real-link" href="good-friends/index.html">
+<span class="thumb"><img alt="Good Friends" src="../wp-content/themes/vosbrenner/cache/img/d24857599c0daac37a1a01bd78a753e7.png"/></span>
+<span class="title">Good Friends</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2014 has-year cat-books has-cat cat-environmental post-id-1904">
+<a class="top-link" href="tortona-stories-monditalia-venice-architecture-biennale/index.html"></a>
+<a class="real-link" href="tortona-stories-monditalia-venice-architecture-biennale/index.html">
+<span class="thumb"><img alt="Venice Architecture Biennale, Monditalia: Tortona Stories" src="../wp-content/themes/vosbrenner/cache/img/189063dcbef95a2ac06a6b0d2946867b.png"/></span>
+<span class="title">Venice Architecture Biennale, Monditalia: Tortona Stories</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2014 has-year cat-books has-cat post-id-1591">
+<a class="top-link" href="eu-2-do-memos-to-the-new-eu-leadership/index.html"></a>
+<a class="real-link" href="eu-2-do-memos-to-the-new-eu-leadership/index.html">
+<span class="thumb"><img alt="EU 2 Do: Memos To The New EU Leadership" src="../wp-content/themes/vosbrenner/cache/img/015391e0549769e842c6538dc6f54299.png"/></span>
+<span class="title">EU 2 Do: Memos To The New EU Leadership</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2014 has-year cat-interaction has-cat post-id-1579">
+<a class="top-link" href="who-says-what/index.html"></a>
+<a class="real-link" href="who-says-what/index.html">
+<span class="thumb"><img alt="Who Says What: Political Manifesto Guide" src="../wp-content/themes/vosbrenner/cache/img/9f5c31d45c82f1dfd7bb41ca8c56705b.png"/></span>
+<span class="title">Who Says What: Political Manifesto Guide</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2014 has-year cat-printed-matter has-cat post-id-1844">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="My Pledge to Youth: League of Young Voters" src="../wp-content/themes/vosbrenner/cache/img/871053936cf9b5399be0f13e1d15bea3.png"/></span>
+<span class="title">My Pledge to Youth: League of Young Voters</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2014 has-year cat-interaction has-cat post-id-1819">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="EU 2 Do: Online" src="../wp-content/themes/vosbrenner/cache/img/7f355f61bb85e4a230cf81ab22aaee04.png"/></span>
+<span class="title">EU 2 Do: Online</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2014 has-year cat-printed-matter has-cat post-id-1851">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Make Your Choice: Who We Are" src="../wp-content/themes/vosbrenner/cache/img/d4fd7ad7cbbf2249c3d6ccec7f856de9.png"/></span>
+<span class="title">Make Your Choice: Who We Are</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2013 has-year cat-information-design has-cat tag-rotterdam has-tag tag-the_netherlands post-id-839">
+<a class="top-link" href="cruise-terminal-rotterdam/index.html"></a>
+<a class="real-link" href="cruise-terminal-rotterdam/index.html">
+<span class="thumb"><img alt="Cruise Terminal Rotterdam" src="../wp-content/themes/vosbrenner/cache/img/1904810b755b1d1c4a23053acf38330f.png"/></span>
+<span class="title">Cruise Terminal Rotterdam</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2013 has-year cat-information-design has-cat tag-rotterdam has-tag tag-the_netherlands post-id-830">
+<a class="top-link" href="dcmr-milieudienst-rijnmond/index.html"></a>
+<a class="real-link" href="dcmr-milieudienst-rijnmond/index.html">
+<span class="thumb"><img alt="DCMR Milieudienst Rijnmond Report" src="../wp-content/themes/vosbrenner/cache/img/6cbe3fcd59bb48dcccf1d4013f7ccf4a.png"/></span>
+<span class="title">DCMR Milieudienst Rijnmond Report</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2013 has-year cat-identity has-cat tag-rotterdam has-tag tag-the_netherlands post-id-844">
+<a class="top-link" href="charlois-wine/index.html"></a>
+<a class="real-link" href="charlois-wine/index.html">
+<span class="thumb"><img alt="Charlois Wine" src="../wp-content/themes/vosbrenner/cache/img/15525964a2263b7d428863ae8ef8d372.png"/></span>
+<span class="title">Charlois Wine</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2013 has-year cat-books has-cat post-id-846">
+<a class="top-link" href="type-compass/index.html"></a>
+<a class="real-link" href="type-compass/index.html">
+<span class="thumb"><img alt="Type Compass" src="../wp-content/themes/vosbrenner/cache/img/178d407c1ce0cc5f95e9817aadffb178.png"/></span>
+<span class="title">Type Compass</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2013 has-year cat-books has-cat post-id-1805">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="SoloMosaico Journal" src="../wp-content/themes/vosbrenner/cache/img/6a880baa39c617f4e061da659482b791.png"/></span>
+<span class="title">SoloMosaico Journal</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2013 has-year cat-identity has-cat post-id-851">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Harvest Map" src="../wp-content/themes/vosbrenner/cache/img/7354853805885920416c709da5ad5ad4.png"/></span>
+<span class="title">Harvest Map</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2013 has-year cat-information-design has-cat tag-milky-way has-tag tag-space post-id-1455">
+<a class="top-link" href="planets-everywhere/index.html"></a>
+<a class="real-link" href="planets-everywhere/index.html">
+<span class="thumb"><img alt="Die Zeit – Planets Everywhere" src="../wp-content/themes/vosbrenner/cache/img/92988bd9c5cbe45072b707ed17cfc169.png"/></span>
+<span class="title">Die Zeit – Planets Everywhere</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2013 has-year cat-books has-cat post-id-1786">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="60 years of the Lijnbaan" src="../wp-content/themes/vosbrenner/cache/img/bcf2309e90701b4711af2aa5ae7f393f.png"/></span>
+<span class="title">60 years of the Lijnbaan</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2013 has-year cat-environmental has-cat post-id-1491">
+<a class="top-link" href="freedomland/index.html"></a>
+<a class="real-link" href="freedomland/index.html">
+<span class="thumb"><img alt="FreedomLand" src="../wp-content/themes/vosbrenner/cache/img/4bf8c6b2e0b9172e07352e4d545f8e94.png"/></span>
+<span class="title">FreedomLand</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-identity has-cat post-id-336">
+<a class="top-link" href="the-rainbow-country/index.html"></a>
+<a class="real-link" href="the-rainbow-country/index.html">
+<span class="thumb"><img alt="The Rainbow Country" src="../wp-content/themes/vosbrenner/cache/img/10a94c80916103e7b82f0c73a496b9ed.png"/></span>
+<span class="title">The Rainbow Country</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-information-design has-cat tag-die-zeit has-tag tag-hamburg post-id-126">
+<a class="top-link" href="die-zeit-der-alltagliche-tod/index.html"></a>
+<a class="real-link" href="die-zeit-der-alltagliche-tod/index.html">
+<span class="thumb"><img alt="Die Zeit – Death On A Daily Basis" src="../wp-content/themes/vosbrenner/cache/img/0d449fe2ad70a91c11545c1ec9f7089b.png"/></span>
+<span class="title">Die Zeit – Death On A Daily Basis</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-information-design has-cat tag-magazine has-tag post-id-864">
+<a class="top-link" href="the-great-plastiv-tide/index.html"></a>
+<a class="real-link" href="the-great-plastiv-tide/index.html">
+<span class="thumb"><img alt="The Great Plastic Tide: Our Greatest Catastrophe" src="../wp-content/themes/vosbrenner/cache/img/5cdaab13a1fffb53e6c39a9d1d1b7303.png"/></span>
+<span class="title">The Great Plastic Tide: Our Greatest Catastrophe</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-information-design has-cat tag-denmark has-tag post-id-162">
+<a class="top-link" href="education-requires/index.html"></a>
+<a class="real-link" href="education-requires/index.html">
+<span class="thumb"><img alt="Education Requires…" src="../wp-content/themes/vosbrenner/cache/img/b61caebbc868e9e08157c79b2be13429.png"/></span>
+<span class="title">Education Requires…</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-environmental has-cat cat-interaction tag-architecture has-tag tag-matter-practice-architecture tag-new_york_city post-id-889">
+<a class="top-link" href="peace-quiet/index.html"></a>
+<a class="real-link" href="peace-quiet/index.html">
+<span class="thumb"><img alt="Peace &amp; Quiet Dialog Station" src="../wp-content/themes/vosbrenner/cache/img/0724e9ac886a62e64b9f4cd79bf41ec0.png"/></span>
+<span class="title">Peace &amp; Quiet Dialog Station</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-printed-matter has-cat post-id-148">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Become Immersed Look Deeper" src="../wp-content/themes/vosbrenner/cache/img/18b92d81afe90d1d0530436e6da2b32e.png"/></span>
+<span class="title">Become Immersed Look Deeper</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-information-design has-cat tag-rotterdam has-tag post-id-221">
+<a class="top-link" href="polyphasic-sleep-experiment/index.html"></a>
+<a class="real-link" href="polyphasic-sleep-experiment/index.html">
+<span class="thumb"><img alt="Polyphasic Sleep Experiment" src="../wp-content/themes/vosbrenner/cache/img/51540cd5d46d4cc7e1e5b19aaf3ed78d.png"/></span>
+<span class="title">Polyphasic Sleep Experiment</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-printed-matter has-cat tag-goethe-institut has-tag tag-rotterdam tag-the_netherlands post-id-434">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Goethe Institute – Meet the Germans" src="../wp-content/themes/vosbrenner/cache/img/8feb4884284dc79f7d8b0a81da96c29b.png"/></span>
+<span class="title">Goethe Institute – Meet the Germans</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-information-design has-cat post-id-858">
+<a class="top-link" href="search-supply-the-impact-of-uninterrupted-access/index.html"></a>
+<a class="real-link" href="search-supply-the-impact-of-uninterrupted-access/index.html">
+<span class="thumb"><img alt="Search &amp; Supply: The Impact of Uninterrupted Access" src="../wp-content/themes/vosbrenner/cache/img/98eb6768330eade22921e004dfc9a68e.png"/></span>
+<span class="title">Search &amp; Supply: The Impact of Uninterrupted Access</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-books has-cat tag-magazine has-tag tag-rotterdam tag-the_netherlands post-id-1354">
+<a class="top-link" href="state-of-the-art/index.html"></a>
+<a class="real-link" href="state-of-the-art/index.html">
+<span class="thumb"><img alt="Announcment: Ernest van der Kwast" src="../wp-content/themes/vosbrenner/cache/img/d19e5d3a266ab691e22f37d6b37dde2c.png"/></span>
+<span class="title">Announcment: Ernest van der Kwast</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-identity has-cat cat-interaction tag-architecture has-tag tag-rotterdam tag-the_netherlands post-id-1305">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Cyclifier.org" src="../wp-content/themes/vosbrenner/cache/img/50d67301dc3f64145fd489a9315d4b45.png"/></span>
+<span class="title">Cyclifier.org</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-printed-matter has-cat tag-new_york_city has-tag tag-the_netherlands post-id-1293">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Tuttobene" src="../wp-content/themes/vosbrenner/cache/img/722122775a210cbce61d0dfde5d7a628.png"/></span>
+<span class="title">Tuttobene</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-books has-cat tag-architecture has-tag tag-new_york_city post-id-924">
+<a class="top-link" href="tolerance-deviances-and-reconciliations/index.html"></a>
+<a class="real-link" href="tolerance-deviances-and-reconciliations/index.html">
+<span class="thumb"><img alt="Tolerance: Deviances and Reconciliations" src="../wp-content/themes/vosbrenner/cache/img/12198a51882caabf3dfbeeab46c20038.png"/></span>
+<span class="title">Tolerance: Deviances and Reconciliations</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2012 has-year cat-environmental has-cat tag-rotterdam has-tag tag-the_netherlands post-id-1247">
+<a class="top-link" href="with-one-eye-on-the-horizon/index.html"></a>
+<a class="real-link" href="with-one-eye-on-the-horizon/index.html">
+<span class="thumb"><img alt="With one Eye on the Horizon" src="../wp-content/themes/vosbrenner/cache/img/a4dd2f4a1dc706d62a6c09f96acb340d.png"/></span>
+<span class="title">With one Eye on the Horizon</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2011 has-year cat-information-design has-cat tag-rotterdam has-tag tag-the_netherlands post-id-533">
+<a class="top-link" href="16th-21rst-century/index.html"></a>
+<a class="real-link" href="16th-21rst-century/index.html">
+<span class="thumb"><img alt="16th – 21rst Century" src="../wp-content/themes/vosbrenner/cache/img/57ab3b01d08a8efb43fab422a168e0bb.png"/></span>
+<span class="title">16th – 21rst Century</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2011 has-year cat-identity has-cat cat-information-design tag-austria has-tag tag-new_york_city tag-vienna post-id-129">
+<a class="top-link" href="belvedere-museum-guide/index.html"></a>
+<a class="real-link" href="belvedere-museum-guide/index.html">
+<span class="thumb"><img alt="Belvedere Museum Guide" src="../wp-content/themes/vosbrenner/cache/img/10115e5ef792ff11cd6202528aa112b9.png"/></span>
+<span class="title">Belvedere Museum Guide</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2011 has-year cat-identity has-cat tag-loyal-kasper has-tag tag-motion-graphics tag-new_york_city post-id-690">
+<a class="top-link" href="weather-247-2/index.html"></a>
+<a class="real-link" href="weather-247-2/index.html">
+<span class="thumb"><img alt="Weather 24/7" src="../wp-content/themes/vosbrenner/cache/img/7c4612807bd1fbe733bff97ef8ab6dec.png"/></span>
+<span class="title">Weather 24/7</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2011 has-year cat-printed-matter has-cat tag-rotterdam has-tag tag-the_netherlands post-id-393">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="WYSIWYG" src="../wp-content/themes/vosbrenner/cache/img/9573fd963678011461b3b86eb22db28e.png"/></span>
+<span class="title">WYSIWYG</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2011 has-year cat-environmental has-cat cat-identity tag-bangkok has-tag tag-thailand post-id-377">
+<a class="top-link" href="queen-sirikit-textile-museum/index.html"></a>
+<a class="real-link" href="queen-sirikit-textile-museum/index.html">
+<span class="thumb"><img alt="Queen Sirikit Textile Museum" src="../wp-content/themes/vosbrenner/cache/img/2bc41a2c368830aff870f565860bdd94.png"/></span>
+<span class="title">Queen Sirikit Textile Museum</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2011 has-year cat-identity has-cat cat-printed-matter tag-rotterdam has-tag tag-the_netherlands post-id-1400">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="State of the Art Debate Platform" src="../wp-content/themes/vosbrenner/cache/img/780c585f010de05aaa641593d3139971.png"/></span>
+<span class="title">State of the Art Debate Platform</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2010 has-year cat-books has-cat tag-magazine has-tag tag-new_york_city post-id-669">
+<a class="top-link" href="9w-no-1/index.html"></a>
+<a class="real-link" href="9w-no-1/index.html">
+<span class="thumb"><img alt="9W A Journal of Cycling Photography" src="../wp-content/themes/vosbrenner/cache/img/d2a65a4d30ea20edfb944b9f37bb87bc.png"/></span>
+<span class="title">9W A Journal of Cycling Photography</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2009 has-year cat-identity has-cat tag-architecture has-tag post-id-153">
+<a class="top-link" href="greg-yang-design/index.html"></a>
+<a class="real-link" href="greg-yang-design/index.html">
+<span class="thumb"><img alt="Greg Yang Design" src="../wp-content/themes/vosbrenner/cache/img/b81f8200650043004104c768aeffc1d3.png"/></span>
+<span class="title">Greg Yang Design</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2009 has-year cat-printed-matter has-cat post-id-500">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Europe by Designers" src="../wp-content/themes/vosbrenner/cache/img/15ccd4b07edf109f0c9afda9b6703ac7.png"/></span>
+<span class="title">Europe by Designers</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2009 has-year cat-environmental has-cat tag-new_york_city has-tag post-id-656">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="This is not a Fashion Photograph" src="../wp-content/themes/vosbrenner/cache/img/11e9619787ec2524b9ef20a7b0745c7d.png"/></span>
+<span class="title">This is not a Fashion Photograph</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2009 has-year cat-printed-matter has-cat tag-architecture has-tag tag-matter-practice-architecture tag-new_york_city post-id-1299">
+<a class="top-link" href="new-practices-san-francisco-3/index.html"></a>
+<a class="real-link" href="new-practices-san-francisco-3/index.html">
+<span class="thumb"><img alt="New Practices San Francisco" src="../wp-content/themes/vosbrenner/cache/img/15a1fad1248ef8bd074243476a2e4e5a.png"/></span>
+<span class="title">New Practices San Francisco</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2009 has-year cat-environmental has-cat tag-architecture has-tag tag-matter-practice-architecture tag-new_york_city post-id-1322">
+<a class="top-link" href="museum-of-chinese-in-america/index.html"></a>
+<a class="real-link" href="museum-of-chinese-in-america/index.html">
+<span class="thumb"><img alt="Museum of Chinese in America" src="../wp-content/themes/vosbrenner/cache/img/d5ed03baac03c0194fc7af3fdfc79438.png"/></span>
+<span class="title">Museum of Chinese in America</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2009 has-year cat-books has-cat tag-new_york_city has-tag post-id-777">
+<a class="top-link" href="our-choice/index.html"></a>
+<a class="real-link" href="our-choice/index.html">
+<span class="thumb"><img alt="Our Choice: A Plan to Solve the Climate Crisis" src="../wp-content/themes/vosbrenner/cache/img/f0d196d49832613347e79f88505521e7.png"/></span>
+<span class="title">Our Choice: A Plan to Solve the Climate Crisis</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2009 has-year cat-environmental has-cat tag-new_york_city has-tag post-id-624">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Munkacsi’s Lost Archive" src="../wp-content/themes/vosbrenner/cache/img/0f989473cbadbeb1b333c7af883b719c.png"/></span>
+<span class="title">Munkacsi’s Lost Archive</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2009 has-year cat-environmental has-cat tag-new_york_city has-tag post-id-644">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Edward Steichen: In High Fashion" src="../wp-content/themes/vosbrenner/cache/img/4674aa2e88d5986fb86628efebb8bcb2.png"/></span>
+<span class="title">Edward Steichen: In High Fashion</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2008 has-year cat-books has-cat tag-architecture has-tag tag-monacelli-press post-id-246">
+<a class="top-link" href="modern-shoestring/index.html"></a>
+<a class="real-link" href="modern-shoestring/index.html">
+<span class="thumb"><img alt="Modern Shoestring" src="../wp-content/themes/vosbrenner/cache/img/4719c5110be8e0c3ee93cff4a0d7e21e.png"/></span>
+<span class="title">Modern Shoestring</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2008 has-year cat-books has-cat post-id-1881">
+<a class="top-link" href="theanyspacewhatever/index.html"></a>
+<a class="real-link" href="theanyspacewhatever/index.html">
+<span class="thumb"><img alt="theanyspacewhatever" src="../wp-content/themes/vosbrenner/cache/img/83b922f027d6f3621107a17168435b99.png"/></span>
+<span class="title">theanyspacewhatever</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2008 has-year cat-books has-cat tag-new_york_city has-tag post-id-482">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="The Artistic Furniture of Charles Rohlfs" src="../wp-content/themes/vosbrenner/cache/img/5df3cee14f79e1e7902ac77435fa9b9c.png"/></span>
+<span class="title">The Artistic Furniture of Charles Rohlfs</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2008 has-year cat-books has-cat tag-monachelli-press has-tag tag-new_york_city post-id-461">
+<a class="top-link" href="knoll-a-modernist-universe/index.html"></a>
+<a class="real-link" href="knoll-a-modernist-universe/index.html">
+<span class="thumb"><img alt="Knoll, A Modernist Universe" src="../wp-content/themes/vosbrenner/cache/img/0cf6b700f0a835a75acfeefa49cb0d01.png"/></span>
+<span class="title">Knoll, A Modernist Universe</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2008 has-year cat-environmental has-cat tag-new_york_city has-tag post-id-423">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Dargerism: Contemporary Artists and Henry Darger" src="../wp-content/themes/vosbrenner/cache/img/e059eb766f3298bc0fdf17a6bd52abfa.png"/></span>
+<span class="title">Dargerism: Contemporary Artists and Henry Darger</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2007 has-year cat-books has-cat post-id-444">
+<a class="top-link" href="layered-urbanism/index.html"></a>
+<a class="real-link" href="layered-urbanism/index.html">
+<span class="thumb"><img alt="Layered Urbanism" src="../wp-content/themes/vosbrenner/cache/img/06d09b020b58455a7d0c214ef31bc555.png"/></span>
+<span class="title">Layered Urbanism</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2006 has-year cat-books has-cat tag-catalogue has-tag tag-new_york_city post-id-904">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Neue Galerie New York Retail Catalogue" src="../wp-content/themes/vosbrenner/cache/img/1bf67283e07524980c5cc79f2405550d.png"/></span>
+<span class="title">Neue Galerie New York Retail Catalogue</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2006 has-year cat-environmental has-cat tag-new_york_city has-tag post-id-1332">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="National Design Triennial" src="../wp-content/themes/vosbrenner/cache/img/0a14235a873051ac78ec9e6d066d5148.png"/></span>
+<span class="title">National Design Triennial</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2006 has-year cat-books has-cat tag-new_york_city has-tag post-id-237">
+<a class="top-link" href="../index.html"></a>
+<a class="real-link" href="../index.html">
+<span class="thumb"><img alt="Wearing Propaganda" src="../wp-content/themes/vosbrenner/cache/img/221defeb9ed0a7e39481f3ce361154b1.png"/></span>
+<span class="title">Wearing Propaganda</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2006 has-year cat-environmental has-cat tag-new_york_city has-tag post-id-328">
+<a class="top-link" href="design-for-the-other-90-2/index.html"></a>
+<a class="real-link" href="design-for-the-other-90-2/index.html">
+<span class="thumb"><img alt="Design for the other 90%" src="../wp-content/themes/vosbrenner/cache/img/aca0a0eb07728ea406472a5e0b7eb725.png"/></span>
+<span class="title">Design for the other 90%</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2005 has-year cat-identity has-cat cat-printed-matter post-id-1861">
+<a class="top-link" href="errol-morris/index.html"></a>
+<a class="real-link" href="errol-morris/index.html">
+<span class="thumb"><img alt="Errol Morris" src="../wp-content/themes/vosbrenner/cache/img/2e51a1f6596e7f15127949548d060aef.png"/></span>
+<span class="title">Errol Morris</span>
+</a>
+</div>
+<div class="post-thumb sortable year-2005 has-year cat-identity has-cat post-id-1868">
+<a class="top-link" href="hautboy-hill-farm/index.html"></a>
+<a class="real-link" href="hautboy-hill-farm/index.html">
+<span class="thumb"><img alt="Hautboy Hill Farm" src="../wp-content/themes/vosbrenner/cache/img/4d058acdad5060d6aa26af79a839894a.png"/></span>
+<span class="title">Hautboy Hill Farm</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+</div>
+</div>
+</body>
+</html>

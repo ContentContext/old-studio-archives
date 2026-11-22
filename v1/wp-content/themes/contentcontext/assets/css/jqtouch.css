@@ -1,0 +1,376 @@
+@-webkit-keyframes fadeIn {
+  /* line 13, ../scss/include/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 16, ../scss/include/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  /* line 22, ../scss/include/_animations.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 25, ../scss/include/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes dissolveIn {
+  /* line 43, ../scss/include/_animations.scss */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 46, ../scss/include/_animations.scss */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes dissolveOut {
+  /* line 52, ../scss/include/_animations.scss */
+  0% {
+    opacity: 1;
+  }
+
+  /* line 55, ../scss/include/_animations.scss */
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@-webkit-keyframes popIn {
+  /* line 73, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: scale(0.2);
+    opacity: 0;
+  }
+
+  /* line 77, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes popOut {
+  /* line 84, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+
+  /* line 88, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: scale(0.2);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideLeftIn {
+  /* line 107, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+
+  /* line 110, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideLeftOut {
+  /* line 116, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translateX(0px);
+  }
+
+  /* line 119, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes slideRightIn {
+  /* line 137, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+
+  /* line 140, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slideRightOut {
+  /* line 146, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translateX(0);
+  }
+
+  /* line 149, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: translateX(100%);
+  }
+}
+
+
+@-webkit-keyframes slideUpIn {
+  /* line 168, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+
+  /* line 171, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideUpOut {
+  /* line 177, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 180, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+
+@-webkit-keyframes slideDownIn {
+  /* line 199, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 202, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slideDownOut {
+  /* line 208, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translateY(0);
+  }
+
+  /* line 211, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: translateY(100%);
+  }
+}
+
+
+@-webkit-keyframes flipLeftIn {
+  /* line 233, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: rotateY(180deg) scale(0.8);
+  }
+
+  /* line 236, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: rotateY(0deg) scale(1);
+  }
+}
+
+@-webkit-keyframes flipLeftOut {
+  /* line 242, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: rotateY(0deg) scale(1);
+  }
+
+  /* line 245, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: rotateY(-180deg) scale(0.8);
+  }
+}
+
+
+@keyframes flipRightIn {
+  /* line 267, ../scss/include/_animations.scss */
+  0% {
+    transform: rotateY(-180deg) scale(0.8);
+  }
+
+  /* line 270, ../scss/include/_animations.scss */
+  100% {
+    transform: rotateY(0deg) scale(1);
+  }
+}
+
+@-webkit-keyframes flipRightIn {
+  /* line 267, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: rotateY(-180deg) scale(0.8);
+  }
+
+  /* line 270, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: rotateY(0deg) scale(1);
+  }
+}
+
+@-webkit-keyframes flipRightOut {
+  /* line 276, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: rotateY(0deg) scale(1);
+  }
+
+  /* line 279, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: rotateY(180deg) scale(0.8);
+  }
+}
+
+
+@-webkit-keyframes swapRightIn {
+  /* line 301, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(0px, 0px, -800px) rotateY(70deg);
+    opacity: 0;
+  }
+
+  /* line 305, ../scss/include/_animations.scss */
+  35% {
+    -webkit-transform: translate3d(-180px, 0px, -400px) rotateY(20deg);
+    opacity: 1;
+  }
+
+  /* line 309, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes swapRightOut {
+  /* line 316, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  /* line 320, ../scss/include/_animations.scss */
+  35% {
+    -webkit-transform: translate3d(180px, 0px, -400px) rotateY(-20deg);
+    opacity: .5;
+  }
+
+  /* line 324, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0px, 0px, -800px) rotateY(-70deg);
+    opacity: 0;
+  }
+}
+
+
+
+@-webkit-keyframes swapLeftIn {
+  /* line 345, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(0px, 0px, -800px) rotateY(-70deg);
+    opacity: 0;
+  }
+
+  /* line 349, ../scss/include/_animations.scss */
+  35% {
+    -webkit-transform: translate3d(180px, 0px, -400px) rotateY(-20deg);
+    opacity: 1;
+  }
+
+  /* line 353, ../scss/include/_animations.scss */
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0px, 0px, 0px) rotateY(0deg);
+  }
+}
+
+@-webkit-keyframes swapLeftOut {
+  /* line 360, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px) rotateY(0deg);
+    opacity: 1;
+  }
+
+  /* line 364, ../scss/include/_animations.scss */
+  35% {
+    -webkit-transform: translate3d(-180px, 0px, -400px) rotateY(20deg);
+    opacity: .5;
+  }
+
+  /* line 368, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: translate3d(0px, 0px, -800px) rotateY(70deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes cubeLeftIn {
+  /* line 400, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: rotateY(90deg) translateZ(320px);
+    opacity: .5;
+  }
+
+  /* line 404, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: rotateY(0deg) translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes cubeLeftOut {
+  /* line 411, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: rotateY(0deg) translateZ(0) translateX(0);
+    opacity: 1;
+  }
+
+  /* line 415, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: rotateY(-90deg) translateZ(320px);
+    opacity: .5;
+  }
+}
+
+
+@-webkit-keyframes cubeRightIn {
+  /* line 434, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: rotateY(-90deg) translateZ(320px);
+    opacity: .5;
+  }
+
+  /* line 438, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: rotateY(0deg) translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes cubeRightOut {
+  /* line 445, ../scss/include/_animations.scss */
+  0% {
+    -webkit-transform: rotateY(0deg) translateZ(0) translateX(0);
+    opacity: 1;
+  }
+
+  /* line 449, ../scss/include/_animations.scss */
+  100% {
+    -webkit-transform: rotateY(90deg) translateZ(320px);
+    opacity: .5;
+  }
+}
