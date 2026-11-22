@@ -1,0 +1,290 @@
+/*
+  Vos Brenner
+  Copyright (C) 2009 by Systemantics, Bureau for Informatics
+
+  Lutz Issler
+  Am Lavenstein 3
+  52064 Aachen
+  GERMANY
+
+  Web:    www.systemantics.net
+  Email:  mail@systemantics.net
+
+  Permission granted to use the files associated with this
+  website only on your webserver.
+
+  Changes to these files are PROHIBITED due to license restrictions.
+*/
+
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body,
+a {
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+input {
+	font: normal 11px Helvetica,Arial,sans-serif;
+	line-height: 15px;
+}
+
+h3 {
+	line-height: 14px;
+}
+
+#enter,
+.backtotop {
+	text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4,
+.backtotop,
+.slide-control,
+.title,
+#enter,
+#tagline {
+	font-weight: bold;
+}
+
+#title {
+	text-transform: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+#index li {
+	margin-left: 7px;
+	text-indent: -7px;
+}
+
+.col {
+	margin-left: 15px;
+	width: 90px;
+}
+
+.wide {
+	width: 120px;
+}
+
+#head {
+	height: 55px;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+h2 {
+	border-bottom: 1px solid black;
+}
+
+#address,
+#logo,
+#title,
+.details {
+	width: 195px;
+}
+
+#tagline {
+	width: 510px;
+}
+
+#text,
+.images {
+	width: 525px;
+}
+
+#tagline {
+	color: white;
+}
+
+#address,
+#index,
+#logo,
+#news,
+#projects,
+#tagline,
+#text,
+#title {
+	position: absolute;
+}
+	
+#logo,
+#title,
+#tagline {
+	padding-bottom: 11px;
+	top: 23px;
+}
+
+#address,
+#logo {
+	left: 15px;
+}
+
+#index {
+	left: 0;
+}
+
+#index {
+	width: 240px;
+}
+
+#logo {
+	width: 225px;
+}
+
+#news {
+	width: 210px;
+}
+
+#projects,
+#tagline,
+#text {
+	left: 255px;
+}
+
+#news,
+#title {
+	left: 780px;
+}
+
+#address,
+#index,
+#news,
+#projects,
+#text {
+	top: 70px;
+}
+
+
+#text .column,
+.col,
+.details,
+.images,
+.project,
+dt {
+	float: left;
+}
+
+.images img {
+	vertical-align: bottom;
+}
+
+dt {
+	clear: left;
+	margin-right: 0.3em;
+}
+
+#news img,
+.images img,
+p,
+ul {
+	margin-bottom: 15px;
+}
+
+p.url {
+	margin-bottom: 0;
+}
+
+p.description {
+	margin-top: 15px;
+}
+
+#projects {
+	width: 720px;
+}
+
+.project {
+	margin-bottom: 45px;
+}
+
+.newsitem {
+	margin-bottom: 30px;
+}
+
+#text .column,
+.images img,
+.images p {
+	margin-right: 15px;
+}
+
+#newsletter input[type="submit"],
+.slideshow img,
+.details span,
+.backtotop {
+	cursor: pointer;
+}
+
+#enter {
+	margin-top: 45px;
+}
+
+#newsletter {
+	margin-top: 90px;
+}
+
+#newsletter input[type="text"] {
+	border: 1px solid #919191;
+	padding: 4px 3px 3px 3px;
+	width: 187px;
+}
+
+#newsletter input[type="submit"] {
+	background: transparent;
+}
+
+.column-1 {
+	width: 90px;
+}
+
+.column-2 {
+	width: 195px;
+}
+
+.column-3 {
+	width: 300px;
+}
+
+.column-4 {
+	width: 405px;
+}
+
+.column-5 {
+	width: 510px;
+}
+
+#news img,
+#text img {
+	display: block;
+}
+
+.images {
+	text-align: right;
+}
+
+#logo,
+#tagline,
+#title {
+	font-size: 14px;
+}
