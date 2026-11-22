@@ -10,3 +10,5 @@ Each version was rebuilt from Wayback Machine snapshots taken during that period
 text and layout are from those snapshots; the live WordPress database was not available, so
 these are static copies, not running WordPress sites). Some images were never archived and
 are omitted.
+
+https://contentcontext.github.io/old-studio-archives/
