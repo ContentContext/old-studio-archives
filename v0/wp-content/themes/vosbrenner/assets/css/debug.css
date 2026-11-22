@@ -1,0 +1,16 @@
+
+body.debug-enabled {
+}
+body.debug-enabled #root {
+	background: #f0fbff url("../img/debug-bg.png") repeat-y 40px 0;
+	width: 1200px;
+}
+body.debug-enabled .wrapper.content .post-thumb a .thumb {
+	background: gray;
+}
+body.debug-enabled #root .wrapper.content .post-wrapper.overview {
+	width: 250px;
+}
+body.debug-enabled #root .wrapper.content .post .data-items .data-item {
+	background-color: #e0ffd5;
+}
